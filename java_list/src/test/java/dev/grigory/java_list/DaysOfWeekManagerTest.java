@@ -28,4 +28,12 @@ public class DaysOfWeekManagerTest {
         manager.createDaysList();
         Assertions.assertEquals(7, manager.getListSize());
 }
+    @Test
+    void testRemoveDay() {
+        DaysOfWeekManager manager = new DaysOfWeekManager();
+        manager.createDaysList();
+        manager.removeDay("Monday");
+        Assertions.assertEquals(6, manager.getListSize()); 
+        Assertions.assertFalse(manager.getDays().contains("Monday"));
+}
 }
