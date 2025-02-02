@@ -16,6 +16,8 @@ public class DaysOfWeekManager {
         manager.createDaysList();
         System.out.println(manager.getDays());
         System.out.println("Size of the list: " + manager.getListSize());
+        manager.removeDay("Monday");
+        System.out.println("After removal: " + manager.getDays());
     }
     public int getListSize() {
         return days.size();
