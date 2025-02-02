@@ -14,6 +14,7 @@ public class DaysOfWeekManager {
         DaysOfWeekManager manager = new DaysOfWeekManager();
         manager.createDaysList();
         System.out.println(manager.getDays());
+        System.out.println("Size of the list: " + manager.getListSize());
     }
     public int getListSize() {
         return days.size();
