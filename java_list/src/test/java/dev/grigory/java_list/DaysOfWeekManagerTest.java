@@ -22,4 +22,10 @@ public class DaysOfWeekManagerTest {
         System.setOut(originalOut);
         Assertions.assertFalse(outputStream.toString().trim().isEmpty());
     }
+    @Test
+    void testGetListSize() {
+        DaysOfWeekManager manager = new DaysOfWeekManager();
+        manager.createDaysList();
+        Assertions.assertEquals(7, manager.getListSize());
+}
 }
