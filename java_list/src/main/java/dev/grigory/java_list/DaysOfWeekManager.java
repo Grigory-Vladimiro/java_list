@@ -19,4 +19,7 @@ public class DaysOfWeekManager {
     public int getListSize() {
         return days.size();
     }
+    public void removeDay(String day) {
+        days.remove(day);
+    }
 }
