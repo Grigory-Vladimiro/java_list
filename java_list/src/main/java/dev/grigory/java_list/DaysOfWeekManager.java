@@ -25,4 +25,10 @@ public class DaysOfWeekManager {
     public void removeDay(String day) {
         days.remove(day);
     }
+    public String getDay(int index) {
+        if (index >= 0 && index < days.size()) {
+            return days.get(index);
+        }
+        return null;
+    }
 }
