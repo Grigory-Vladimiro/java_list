@@ -36,4 +36,13 @@ public class DaysOfWeekManagerTest {
         Assertions.assertEquals(6, manager.getListSize()); 
         Assertions.assertFalse(manager.getDays().contains("Monday"));
 }
+    @Test
+    void testGetDay() {
+        DaysOfWeekManager manager = new DaysOfWeekManager();
+        manager.createDaysList();
+        Assertions.assertEquals("Monday", manager.getDay(0)); 
+        Assertions.assertEquals("Wednesday", manager.getDay(2)); 
+        Assertions.assertNull(manager.getDay(10)); 
+
+}
 }
