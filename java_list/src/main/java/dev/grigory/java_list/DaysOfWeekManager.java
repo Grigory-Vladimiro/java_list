@@ -22,7 +22,7 @@ public class DaysOfWeekManager {
         System.out.println("Day at index 0: " + manager.getDay(0)); 
         System.out.println("Day at index 3: " + manager.getDay(3)); 
         System.out.println("Day at index 10: " + manager.getDay(10));
-        System.out.println("Does 'Monday' exist? " + manager.exists("Friday")); 
+        System.out.println("Does 'Friday' exist? " + manager.exists("Friday")); 
         System.out.println("Does 'Holiday' exist? " + manager.exists("Holiday"));
     }
     public int getListSize() {
