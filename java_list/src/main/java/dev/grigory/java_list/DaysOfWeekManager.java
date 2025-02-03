@@ -18,6 +18,10 @@ public class DaysOfWeekManager {
         System.out.println("Size of the list: " + manager.getListSize());
         manager.removeDay("Monday");
         System.out.println("After removal: " + manager.getDays());
+        System.out.println("Full list: " + manager.getDays()); 
+        System.out.println("Day at index 0: " + manager.getDay(0)); 
+        System.out.println("Day at index 3: " + manager.getDay(3)); 
+        System.out.println("Day at index 10: " + manager.getDay(10)); 
     }
     public int getListSize() {
         return days.size();
