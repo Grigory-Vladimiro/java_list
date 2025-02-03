@@ -61,4 +61,12 @@ public class DaysOfWeekManagerTest {
         manager.getDays()
     );
 }
+    @Test
+    void testClearList() {
+        DaysOfWeekManager manager = new DaysOfWeekManager();
+        manager.createDaysList();  
+        manager.clearList();
+        Assertions.assertEquals(0, manager.getListSize()); 
+        Assertions.assertTrue(manager.getDays().isEmpty()); 
+}
 }
