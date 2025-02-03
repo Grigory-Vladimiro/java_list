@@ -1,6 +1,7 @@
 package dev.grigory.java_list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class DaysOfWeekManager {
@@ -24,6 +25,9 @@ public class DaysOfWeekManager {
         System.out.println("Day at index 10: " + manager.getDay(10));
         System.out.println("Does 'Friday' exist? " + manager.exists("Friday")); 
         System.out.println("Does 'Holiday' exist? " + manager.exists("Holiday"));
+        System.out.println("Before sorting: " + manager.getDays());
+        manager.sortDays();
+        System.out.println("After sorting: " + manager.getDays());
     }
     public int getListSize() {
         return days.size();
@@ -40,4 +44,7 @@ public class DaysOfWeekManager {
     public boolean exists(String day) {
         return days.contains(day);
     }
+    public void sortDays() {
+    Collections.sort(days);
+}
 }
