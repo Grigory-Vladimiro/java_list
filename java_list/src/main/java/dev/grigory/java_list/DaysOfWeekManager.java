@@ -28,6 +28,9 @@ public class DaysOfWeekManager {
         System.out.println("Before sorting: " + manager.getDays());
         manager.sortDays();
         System.out.println("After sorting: " + manager.getDays());
+        System.out.println("Before clearing: " + manager.getDays());
+        manager.clearList();
+        System.out.println("After clearing: " + manager.getDays());
     }
     public int getListSize() {
         return days.size();
@@ -46,5 +49,8 @@ public class DaysOfWeekManager {
     }
     public void sortDays() {
     Collections.sort(days);
+}
+    public void clearList() {
+    days.clear();
 }
 }
