@@ -1,0 +1,31 @@
+@startuml days_of_week_manager
+class DaysOfWeekManager {
+    - days: List<String>
+    
+    + createDaysList()
+    + getDays(): List<String>
+    + getListSize(): int
+    + removeDay(day: String)
+    + getDay(index: int): String
+    + exists(day: String): boolean
+    + sortDays()
+    + clearList()
+    + main(args: String[])
+}
+
+class DaysOfWeekManagerTest {
+    - manager: DaysOfWeekManager
+    
+    + testCreateDaysList()
+    + testGetDays()
+    + testGetListSize()
+    + testRemoveDay()
+    + testGetDay()
+    + testExists()
+    + testSortDays()
+    + testClearList()
+    + testMain()
+}
+
+DaysOfWeekManagerTest ..|> DaysOfWeekManager : "tests"
+@enduml
